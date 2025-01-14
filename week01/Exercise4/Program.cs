@@ -57,5 +57,52 @@ class Program
         {
             Console.WriteLine(number);
         }
-    }
+
+        Loop();
+
+        static void Loop()
+        {
+            Console.WriteLine("------0--------------Loop---------o-------------");
+        string response;
+          
+        do {
+            
+                Console.WriteLine("Do you  want to continue  ? ");
+                 response  = Console.ReadLine();
+
+            }
+            while(response == "Yes");
+
+        for(int i = 0 ;i<10; i++)
+        {
+            Console.WriteLine(i);
+        }
+        Random  RandomGenerator = new Random();
+        int number  = RandomGenerator.Next(1, 11);
+
+        Console.WriteLine(number);
+
+
+        List<string>words = new List<string>();
+
+        words.Add("Book ");
+        words.Add("Phone");
+        words.Add("Python");
+
+        Console.WriteLine(words.Count);
+     
+       
+       foreach(string  names  in  words)
+       {
+            Console.WriteLine(names);
+       }
+
+for(int i=0; i <words.Count; i++)
+{
+   Console.WriteLine(words[i]);
 }
+        }
+    }
+
+}
+
