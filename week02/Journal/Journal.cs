@@ -34,7 +34,7 @@ public class Journal
         using StreamWriter output = new(file);
         foreach (var entry in _entries)
         {
-            output.WriteLine($"{entry._date} -{entry._promptText} -{entry._entryText}");
+            output.WriteLine($"{entry._date}~{entry._promptText} ~{entry._entryText}");
         }
     }
     public void  LoadFromFile(string file)
@@ -43,7 +43,7 @@ public class Journal
 
       foreach(string line in  lines )
       {
-        string[] parts = line.Split("-");
+        string[] parts = line.Split("~");
           string promptText = parts[1];
           string entryTExt = parts[2];
           Entry entry = new(promptText,entryTExt)
