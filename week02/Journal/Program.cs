@@ -1,11 +1,10 @@
 using System ; 
-using System.Security.Cryptography;
 class Program
 {
     static void Main(string[]args)
     {
         Journal journal = new();
-        string files  = "journal.txt";
+        string fileName  = "journal.txt";
 
         while (true)
         {
@@ -16,7 +15,7 @@ class Program
             Console.WriteLine("5. Quit");
 
             Console.WriteLine("Enter Selection:  ");
-            String  userInput  = Console.ReadLine();
+            string userInput  = Console.ReadLine();
 
             Console.WriteLine($"User selection {userInput}");
 
@@ -32,12 +31,12 @@ class Program
             }else if (userInput == "3")
             {
                Console.WriteLine("Save  Journal ");
-               journal.SaveToFile(files);
+               journal.SaveToFile(fileName);
 
             }else if (userInput == "4")
             {
                Console.WriteLine("Load Jouranl ");
-               journal.LoadFromFile(files);
+               journal.LoadFromFile(fileName);
             }else if (userInput == "5")
             {
                return ;
