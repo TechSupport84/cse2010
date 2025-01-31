@@ -24,6 +24,12 @@ public class Fraction
         _bottom = bottom;
     }
 
+    public string SetFranctin(int top, int bottom)
+    {
+        _top = top;
+        _bottom = bottom;
+        return GetFractionString();
+    }
     public string GetFractionString()
     {
         // Notice that this is not stored as a member variable.
