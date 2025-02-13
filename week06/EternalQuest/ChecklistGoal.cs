@@ -5,7 +5,7 @@ public abstract class ChecklistGoal :Goal
     private int  _bonus;
 
 
-    public ChecklistGoal(string  name , string  description ,  string points, int amountCompleted, int target , int bonus) 
+    public ChecklistGoal(string  name , string  description ,  int  points, int amountCompleted, int target , int bonus) 
     :base (name ,  description, points)
     {
         _amountCompleted = amountCompleted;
