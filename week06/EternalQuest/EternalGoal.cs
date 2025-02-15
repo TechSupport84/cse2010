@@ -1,4 +1,4 @@
-public  abstract class EternalGoal :Goal
+public class EternalGoal :Goal
 {
    public EternalGoal(string name , string description ,  int  points):base(name,description,points )
    {
@@ -6,7 +6,7 @@ public  abstract class EternalGoal :Goal
    }
    public override void RecordEvent()
    {
-
+     
    }
     public override bool IsComplete()
     {
@@ -17,5 +17,10 @@ public  abstract class EternalGoal :Goal
     {
          return "";
 
+    }
+
+    public override string GetDetailsString()
+    {
+        return "";
     }
 }
